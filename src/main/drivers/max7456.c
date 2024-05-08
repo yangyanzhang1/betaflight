@@ -662,8 +662,8 @@ bool max7456DrawScreen(void)
                     buffer[pos] = ' ';
                 }
 
-                if (setAddress || !autoInc) {
-                    /* if (buffer[pos + 1] != shadowBuffer[pos + 1]) {
+                if (setAddress || !autoInc) {       //dec
+                    /* if (buffer[pos + 1] != shadowBuffer[pos + 1]) { 
                         // It's worth auto incrementing
                         spiBuf[spiBufIndex++] = MAX7456ADD_DMM;
                         spiBuf[spiBufIndex++] = displayMemoryModeReg | DMM_AUTO_INC;
